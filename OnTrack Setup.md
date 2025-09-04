@@ -1,5 +1,4 @@
 
-````markdown
 # Doubtfire Setup & Common Issues (Kali VM / Docker)
 
 ---
@@ -117,8 +116,6 @@ After this, system built and ran at `http://localhost:4200` (web) and `http://lo
 ---
 
 ![Final Success](https://raw.githubusercontent.com/0xFronto/doubtfire-setup-notes/main/docs/images/final-success.png)
-
-```
 
 ---
 
