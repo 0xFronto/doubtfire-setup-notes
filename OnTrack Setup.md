@@ -1,6 +1,5 @@
 
----
-
+````markdown
 # Doubtfire Setup & Common Issues (Kali VM / Docker)
 
 ---
@@ -13,7 +12,7 @@
 git clone https://github.com/thoth-tech/doubtfire-deploy.git
 cd doubtfire-deploy
 git checkout 9.x
-```
+````
 
 **Output (expected):**
 
@@ -29,7 +28,7 @@ branch '9.x' set up to track 'origin/9.x'.
 Switched to a new branch '9.x'
 ```
 
-![Git Setup](./images/git-setup.png)
+![Git Setup](https://raw.githubusercontent.com/0xFronto/doubtfire-setup-notes/main/docs/images/git-setup.png)
 
 ---
 
@@ -53,8 +52,8 @@ to:
 FROM ruby:3.3-bullseye
 ```
 
-![Gemfile Fix](./images/gemfile-fix.png)
-![Ruby Mismatch](./images/ruby-mismatch.png)
+![Gemfile Fix](https://raw.githubusercontent.com/0xFronto/doubtfire-setup-notes/main/docs/images/gemfile-fix.png)
+![Ruby Mismatch](https://raw.githubusercontent.com/0xFronto/doubtfire-setup-notes/main/docs/images/ruby-mismatch.png)
 
 ---
 
@@ -71,7 +70,7 @@ docker-compose -f development/docker-compose.yml up
 
 API container fails with MySQL migration errors (indexes missing).
 
-![Migration Error](./images/migration-error.png)
+![Migration Error](https://raw.githubusercontent.com/0xFronto/doubtfire-setup-notes/main/docs/images/migration-error.png)
 
 ---
 
@@ -95,7 +94,7 @@ After starting successfully, the VM froze / lagged heavily. Cause:
 * Angular + Rails + MySQL + Redis + Overseer containers are **very resource intensive**.
 * Running with only **2 GB RAM** in Kali VM made the system unusable.
 
-![VM Latency](./images/vm-latency.png)
+![VM Latency](https://raw.githubusercontent.com/0xFronto/doubtfire-setup-notes/main/docs/images/vm-latency.png)
 
 ---
 
@@ -109,7 +108,7 @@ After starting successfully, the VM froze / lagged heavily. Cause:
   * **CPUs:** 4–6
   * **Disk:** 80 GB+
 
-![Resource Upgrade](./images/resource-upgrade.png)
+![Resource Upgrade](https://raw.githubusercontent.com/0xFronto/doubtfire-setup-notes/main/docs/images/resource-upgrade.png)
 
 ---
 
@@ -117,7 +116,9 @@ After this, system built and ran at `http://localhost:4200` (web) and `http://lo
 
 ---
 
-![Final Success](./images/final-success.png)
+![Final Success](https://raw.githubusercontent.com/0xFronto/doubtfire-setup-notes/main/docs/images/final-success.png)
+
+```
 
 ---
 
